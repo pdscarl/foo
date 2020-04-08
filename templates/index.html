@@ -1,0 +1,17 @@
+online users:
+{{ online_users }}
+
+<ul>
+{% for user in online_users %}
+<li>{{ user }}</li>
+{% endfor %}
+<ul>
+
+
+<form method="POST" action="/new">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.occupation.label }} {{ form.occupation(size=40) }}
+    {{ form.language.label }} {{ form.language }}
+    <input type="submit" value="Go">
+</form>

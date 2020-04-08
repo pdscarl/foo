@@ -1,0 +1,10 @@
+*~
+*.beam
+*.pyc
+/.mysql_history
+/.bash_history
+/erl_crash.dump
+venv
+/.yaws/
+/.viminfo
+/.python_history
